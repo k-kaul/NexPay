@@ -42,3 +42,4 @@ next-env.d.ts
 
 
 /bankWebHook/node_modules
+/bankWebHook/dist
