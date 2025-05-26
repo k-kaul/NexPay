@@ -1,5 +1,6 @@
 import db from "../../prisma/db";
 import CredentialsProvider from "next-auth/providers/credentials";
+import GoogleProvider from "next-auth/providers/google";
 import bcrypt from "bcrypt";
 import { z } from "zod";
 
@@ -75,6 +76,10 @@ export const authOptions = {
         return null;
       },
     }),
+        GoogleProvider({
+            clientId: process.env.GOOGLE_CLIENT_ID || "",
+            clientSecret: process.env.GOOGLE_CLIENT_SECRET ||""
+            })
   ],
   secret: process.env.JWT_SECRET || "secret",
   callbacks: {
