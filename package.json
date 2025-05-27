@@ -5,8 +5,8 @@
   "scripts": {
 
     "dev": "concurrently \"next dev\" \"npm run dev --prefix bankWebHook\"",
-    "build": "next build",
-    "start": "next start",
+    "build": "concurrently \"next build\" \"npm run build --prefix bankWebHook\"",
+    "start": "concurrently \"next start\" \"npm run start --prefix bankWebHook\"",
     "lint": "next lint"
   },
   "prisma": {
