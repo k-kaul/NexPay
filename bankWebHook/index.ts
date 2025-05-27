@@ -1,5 +1,5 @@
 import express from 'express';
-import db from "../prisma/db";
+import db from "../prisma/src/db";
 import { z } from 'zod';
 
 const Port = process.env.PORT || 3003;

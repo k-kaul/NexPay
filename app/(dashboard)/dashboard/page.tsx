@@ -1,6 +1,6 @@
 import React from "react";
 import { getServerSession } from "next-auth";
-import prisma from "../../../prisma/db";
+import prisma from "../../../prisma/src/db";
 import { authOptions } from "../../lib/auth";
 import { OnRampTransaction } from "../../../components/OnRampTransaction";
 

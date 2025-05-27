@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth";
 import { authOptions } from "../../lib/auth";
-import prisma from "../../../prisma/db";
+import prisma from "../../../prisma/src/db";
 import { OnRampTransaction } from "../../../components/OnRampTransaction";
 import { Metadata } from 'next'
 import { CircleX, TicketX, Users, Wallet } from "lucide-react";
