@@ -1,10 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import google from "../../assests/googleIcon.png"
+import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { ArrowRight, Smartphone, Lock, Info } from "lucide-react";
-import { signIn } from "next-auth/react";
+import { getProviders, signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function LoginSignup() {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -12,7 +14,14 @@ export default function LoginSignup() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
   const router = useRouter();
+  const [providers,setProviders] = useState<any>(null)
 
+  useEffect(()=>{
+    getProviders().then((res)=>{
+      setProviders(res)
+    })
+  },[])
+  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
@@ -57,7 +66,7 @@ export default function LoginSignup() {
               <input
                 id="phoneNumber"
                 type="tel"
-                placeholder="Enter your phone number"
+                placeholder="Enter Your Phone Number"
                 value={phoneNumber}
                 onChange={(e) => setPhoneNumber(e.target.value)}
                 className="pl-10 w-full h-10 rounded-md"
@@ -74,7 +83,7 @@ export default function LoginSignup() {
               <input
                 id="password"
                 type="password"
-                placeholder="Enter your password"
+                placeholder="Enter Your Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 className="pl-10 w-full h-10 rounded-md"
@@ -102,6 +111,20 @@ export default function LoginSignup() {
             )}
           </button>
         </form>
+        <div className="my-6 text-center text-gray-400">OR</div>
+        {providers?.google && (
+          <button
+            onClick={() => signIn("google")}
+            className="w-full border border-gray-300 py-2 rounded-md flex items-center justify-center hover:bg-gray-100"
+          >
+            <Image
+              src={google}
+              alt="Google"
+              className="w-5 h-5 mr-2"
+            />
+            Continue with Google
+          </button>
+        )}
       </div>
     </div>
   );
