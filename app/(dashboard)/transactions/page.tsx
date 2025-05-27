@@ -64,7 +64,7 @@ export default async function TransactionsPage() {
     receivedP2PTranscations,
     onRampTransactions,
     onRampTransactionsPending,
-    onRampTransactionsFailed,
+    
   ] = await Promise.all([
     getsentP2PTranscations(),
     getreceivedP2PTranscations(),

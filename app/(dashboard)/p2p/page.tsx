@@ -2,7 +2,6 @@ import { Card } from "@/ui/card";
 import { SendCard } from "../../../components/SendCard";
 import { Metadata } from 'next'
 import { Shield, Zap } from "lucide-react";
-import { Center } from "@/ui/Center";
 
 export const metadata: Metadata = {
   title: 'P2P Transfer | NexPay',
@@ -36,7 +35,7 @@ export default function () {
                   <div>
                     <h3 className="font-medium text-violet-900 mb-1">Instant Transfers</h3>
                     <p className="text-sm text-violet-700">
-                      Money is transferred instantly to the recipient's Nexus account.
+                      {`Money is transferred instantly to the recipient's Nexus account.`}
                     </p>
                   </div>
                 </div>

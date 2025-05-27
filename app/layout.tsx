@@ -16,15 +16,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }){
-  const showAppbarAndFooter = true; // default value
+  
 
   return (
     <html lang="en">
       <body className={inter.className}>
         <Providers>
           <ClientWrapper>
-            {/* <SpeedInsights /> */}
-            {/* <Analytics /> */}
             {children}
           </ClientWrapper>
         </Providers>

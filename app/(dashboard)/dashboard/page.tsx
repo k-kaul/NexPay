@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 
 import {
   Wallet,
-  TrendingUp,
   AlertCircle,
   ArrowUpRight,
   ArrowDownLeft,
@@ -21,6 +20,14 @@ import {
   HelpCircle,
 } from "lucide-react";
 import Link from "next/link";
+import { OnRampStatus } from "@/prisma/generated/prisma";
+
+type Txn= {
+  startTime: Date,
+    amount: number,
+    status: string,
+    provider: string
+}
 
 async function getBalance() {
   const session = await getServerSession(authOptions);
@@ -46,7 +53,7 @@ async function getOnRampTransactions() {
     },
     take: 10,
   });
-  return txns.map((txn: any) => ({
+  return txns.map((txn: Txn) => ({
     time: txn.startTime,
     amount: txn.amount,
     status: txn.status,
