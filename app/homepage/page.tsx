@@ -1,7 +1,7 @@
-import Homepage from "@/components/Homepage"
+import {HeroSection} from "@/components/Hero"
 
 export default function Homepages(){
     return <div>
-        <Homepage></Homepage>
+        <HeroSection></HeroSection>
     </div>
 }

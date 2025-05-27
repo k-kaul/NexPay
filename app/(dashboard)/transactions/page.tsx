@@ -92,7 +92,7 @@ export default async function TransactionsPage() {
             <Users className="h-5 w-5 text-violet-500" />
             <span className="text-blue-600">P2P </span>Transactions
             </div>
-            <p className="text-sm font-light pt-1">Money sent to or received from other Nexus users</p>
+            <p className="text-sm font-light pt-1">Money sent to or received from other NexPay users</p>
           </h1>
           <div>
             

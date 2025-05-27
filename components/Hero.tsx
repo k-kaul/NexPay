@@ -208,7 +208,7 @@ export function HeroSection() {
             Ready to Transform Your Financial Experience?
           </h2>
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            Join thousands of users and experience the future of personal finance with Nexus. Start your journey today.
+            Join thousands of users and experience the future of personal finance with NexPay. Start your journey today.
           </p>
           <Link href="/api/auth/signin">
             <button className="group relative inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-violet-600 to-indigo-600 px-8 py-3 text-lg font-medium text-white hover:from-violet-700 hover:to-indigo-700 transition-all duration-200 shadow-lg hover:shadow-xl">

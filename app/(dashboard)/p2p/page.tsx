@@ -35,7 +35,7 @@ export default function () {
                   <div>
                     <h3 className="font-medium text-violet-900 mb-1">Instant Transfers</h3>
                     <p className="text-sm text-violet-700">
-                      {`Money is transferred instantly to the recipient's Nexus account.`}
+                      {`Money is transferred instantly to the recipient's NexPay account.`}
                     </p>
                   </div>
                 </div>

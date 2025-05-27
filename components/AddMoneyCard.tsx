@@ -26,7 +26,7 @@ export const AddMoney = () => {
   );
   return (
     <Card title="Add Money" className="">
-      <div className="mb-5">Top up your Nexus wallet</div>
+      <div className="mb-5">Top up your NexPay wallet</div>
       <div className="flex flex-col gap- w-full mt-3">
         <Textinput
           label={"Amount"}
