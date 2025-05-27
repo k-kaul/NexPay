@@ -1,0 +1,15 @@
+{
+  "version":2,
+    "builds": [
+    {
+      "src": "bankWebHook/index.ts",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["prisma/src/db/**"]
+      }
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "bankWebHook/index.ts" }
+  ]
+}

@@ -1,8 +1,9 @@
 import express from 'express';
 import db from "../prisma/src/db";
 import { z } from 'zod';
+import { createServer, IncomingMessage, ServerResponse } from 'http';
 
-const Port = process.env.PORT || 3003;
+// const Port = process.env.PORT || 3003;
 const app = express();
 app.use(express.json());
 
@@ -43,7 +44,7 @@ async function processPendingTransactions() {
   }
 }
 
-app.post('/hdfcWebhook', async (req, res) => {
+app.post('/api/hdfcWebhook', async (req, res) => {
   const result = TranscationSchema.safeParse(req.body);
 
   if (!result.success) {
@@ -87,7 +88,12 @@ app.post('/hdfcWebhook', async (req, res) => {
 });
 
 
-app.listen(Port, async () => {
-  console.log(`Server is running on ${Port}`);
-  await processPendingTransactions();
-});
+// app.listen(Port, async () => {
+//   console.log(`Server is running on ${Port}`);
+//   await processPendingTransactions();
+// });
+
+export default (req: IncomingMessage, res: ServerResponse) => {
+  const server = createServer(app);
+  server.emit('request', req, res);
+};
