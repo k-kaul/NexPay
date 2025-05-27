@@ -1,6 +1,7 @@
 import express from 'express';
 import db from '../../prisma/db';
 import { z } from 'zod';
+
 const Port = process.env.PORT || 3003;
 const app = express();
 app.use(express.json());
