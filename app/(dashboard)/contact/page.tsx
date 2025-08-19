@@ -26,7 +26,7 @@ export default function ContactUsPage() {
             <span className="bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">NexPay </span>Contact Us
           </h1>
           <p className="mt-2 text-lg sm:text-xl text-slate-800">
-            We're here to help with any questions or concerns
+            We&apos;re here to help with any questions or concerns
           </p>
         </div>
 
@@ -56,7 +56,7 @@ export default function ContactUsPage() {
                 Get a response within 24 hours
               </p>
               <a
-                href="mailto:support@pankajams1234@gmail.com"
+                href=""
                 className="text-violet-600 font-medium hover:text-violet-800"
               >
                 support@NexPay.com
