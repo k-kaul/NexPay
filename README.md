@@ -1,12 +1,12 @@
 # NexPay
 
+NexPay is a modern **peer-to-peer (P2P) payment and wallet management system** built to make digital transactions simple, secure, and seamless.  
+With a clean interface and a reliable backend, NexPay empowers users to transfer funds, manage balances, and track activity with ease.
+
 ![Home Page Screenshot](./assets/homepage.png)
 ![Dashboard Page Screenshot](./assets/dashboard.png)
 ![Transfer Page Screenshot](./assets/transfer.png)
 ![Transactions Page Screenshot](./assets/transactions.png)
-
-NexPay is a modern **peer-to-peer (P2P) payment and wallet management system** built to make digital transactions simple, secure, and seamless.  
-With a clean interface and a reliable backend, NexPay empowers users to transfer funds, manage balances, and track activity with ease.
 
 ---
 
