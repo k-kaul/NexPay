@@ -62,7 +62,7 @@ export default function LoginSignup() {
               Phone Number
             </label>
             <div className="relative">
-              <Smartphone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-violet-600" />
+              <Smartphone className="absolute left-3 top-1/2 transform -translate-y-1/2 text-violet-600" />
               <input
                 id="phoneNumber"
                 type="tel"
@@ -79,7 +79,7 @@ export default function LoginSignup() {
               Password
             </label>
             <div className="relative">
-              <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-violet-600" />
+              <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-violet-600" />
               <input
                 id="password"
                 type="password"
