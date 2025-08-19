@@ -1,6 +1,6 @@
 "use client";
 
-import google from "../../assests/googleIcon.png"
+import google from "../../assets/googleIcon.png"
 import React, { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { ArrowRight, Smartphone, Lock, Info } from "lucide-react";

@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Loader2 } from "lucide-react";
-import axis from "../assests/axisLogo.png";
+import axis from "../assets/axisLogo.png";
 import { createOnRamptxn } from "../app/lib/actions/createOnRampTxn";
 
 export default function AxisTransactionPage() {
