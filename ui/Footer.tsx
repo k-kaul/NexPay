@@ -1,6 +1,5 @@
 import React from "react";
-import Link from "next/link";
-import { Github, Twitter, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 interface FooterProps {
   year?: number;
