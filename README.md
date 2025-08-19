@@ -1,5 +1,10 @@
 # NexPay
 
+![Home Page Screenshot](./assets/homepage.png)
+![Home Page Screenshot](./assets/dashboard.png)
+![Home Page Screenshot](./assets/transfer.png)
+![Home Page Screenshot](./assets/transactions.png)
+
 NexPay is a modern **peer-to-peer (P2P) payment and wallet management system** built to make digital transactions simple, secure, and seamless.  
 With a clean interface and a reliable backend, NexPay empowers users to transfer funds, manage balances, and track activity with ease.
 
@@ -50,7 +55,7 @@ With a clean interface and a reliable backend, NexPay empowers users to transfer
 | Category           | Technology                          |
 | ------------------ | ----------------------------------- |
 | **Frontend**       | Next.js, TailwindCSS, Framer Motion |
-| **Backend**        | Next.js API, Express (future)       |
+| **Backend**        | Next.js API, Express (WebHook)      |
 | **Database**       | PostgreSQL, Prisma ORM              |
 | **Tools**          | Turborepo, TypeScript               |
 | **Authentication** | NextAuth (JWT sessions)             |
